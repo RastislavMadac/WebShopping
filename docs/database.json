@@ -1,0 +1,500 @@
+[
+    {
+        "table_name": "abstract_products",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "name",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "global_banned_keywords",
+        "data_type": "ARRAY",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "preferred_store_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "exact_sku_locked",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "global_required_keywords",
+        "data_type": "ARRAY",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "default_min_kg",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "default_max_kg",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "abstract_products",
+        "column_name": "category_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "task_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "search_query",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "sku",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "name",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "cena_balenia",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "cena_za_kg",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "vaha_kg",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "url",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "image_url",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "filter_status",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "rejection_reason",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "analyzed_products_archive",
+        "column_name": "api_source",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "categories",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "categories",
+        "column_name": "name",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "categories",
+        "column_name": "parent_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "categories",
+        "column_name": "description",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "categories",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "regal_products",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "regal_products",
+        "column_name": "regal_id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "regal_products",
+        "column_name": "abstract_product_id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "regal_products",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "regals",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "regals",
+        "column_name": "stock_id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "regals",
+        "column_name": "code",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "regals",
+        "column_name": "description",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "regals",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "abstract_product_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "status",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "max_tolerance_kg",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "matched_sku_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "updated_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "purchased_sku",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "product_image_url",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "product_url",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "allow_multipack",
+        "data_type": "boolean",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "shopping_queue",
+        "column_name": "quantity",
+        "data_type": "integer",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "abstract_product_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "store_id",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "sku",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "barcode",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "name",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "weight_kg",
+        "data_type": "numeric",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "pieces_in_pack",
+        "data_type": "integer",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "sku_variants",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "stocks",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "stocks",
+        "column_name": "name",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "stocks",
+        "column_name": "location",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "stocks",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "abstract_product_id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "store_id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "search_query",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "store_banned_keywords",
+        "data_type": "ARRAY",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "store_required_keywords",
+        "data_type": "ARRAY",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "exact_sku_locked",
+        "data_type": "uuid",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_mappings",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "store_id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "session_cookies",
+        "data_type": "jsonb",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "browser_headers",
+        "data_type": "jsonb",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "user_agent",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "is_active",
+        "data_type": "boolean",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "last_error_message",
+        "data_type": "text",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "store_sessions",
+        "column_name": "updated_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    },
+    {
+        "table_name": "stores",
+        "column_name": "id",
+        "data_type": "uuid",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "stores",
+        "column_name": "name",
+        "data_type": "text",
+        "is_nullable": "NO"
+    },
+    {
+        "table_name": "stores",
+        "column_name": "created_at",
+        "data_type": "timestamp with time zone",
+        "is_nullable": "YES"
+    }
+]
