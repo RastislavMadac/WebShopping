@@ -1,5 +1,4 @@
 import asyncio
-import httpx
 import re
 import os
 import random
@@ -7,16 +6,31 @@ import urllib.parse
 import time
 import json
 import math
+import sys
 from abc import ABC, abstractmethod
-from supabase import create_async_client, AsyncClient
+from dotenv import load_dotenv
+from supabase import create_client, Client 
+from supabase import create_async_client
 from playwright.async_api import async_playwright
-
+from supabase import create_client, Client
+from playwright.sync_api import sync_playwright
+from playwright_stealth import Stealth
+import httpx
 # ==========================================
 # 1. KONFIGURÁCIA SUPABASE
 # ==========================================
-SUPABASE_URL = "https://czrqmxxhlkgvzewhennt.supabase.co"
-SUPABASE_KEY = "sb_secret_In08skIntFA7CMALSI-XpA_odBUx1Zs"
-supabase: AsyncClient = None
+# ⬅️ NOVÉ: Načítanie tajných kľúčov zo súboru .env
+load_dotenv()
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+
+# ⬅️ NOVÉ: Fail-fast ochrana. Ak skript nenájde kľúče v .env, hneď sa vypne, aby nevyhadzoval nezmyselné chyby neskôr.
+if not SUPABASE_URL or not SUPABASE_KEY:
+    print("CRITICAL ERROR: Chýbajú Supabase kľúče v .env súbore!", file=sys.stderr)
+    sys.exit(1)
+
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
 # ==========================================
